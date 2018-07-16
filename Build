@@ -1,0 +1,7 @@
+#!/bin/bash
+container_name="do-dydns-updater"
+docker stop $container_name
+docker rm $container_name
+docker build -t $container_name .
+#docker run --rm $container_name
+docker run --rm --name $container_name $container_name
