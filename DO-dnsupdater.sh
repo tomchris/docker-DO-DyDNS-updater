@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in $(ls *.dns) 
+for i in $(ls /var/*.dns) 
 do
   token=""
   domain=""

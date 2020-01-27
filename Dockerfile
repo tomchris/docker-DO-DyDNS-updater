@@ -10,7 +10,6 @@ RUN apt-get update && \
     jq
 
 COPY DO-dnsupdater.sh /DO-dnsupdater.sh
-COPY *.dns /
 
 RUN chmod 0700 /DO-*
 CMD ["/bin/bash","/DO-dnsupdater.sh"] 
